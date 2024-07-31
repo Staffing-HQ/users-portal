@@ -1,11 +1,13 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: "users-portal"
-  description: "A website for managing users."
+  name: users-portal
+  description: A website for managing users
+  title: Users Portal
   annotations:
     github.com/project-slug: Staffing-HQ/users-portal
     backstage.io/techdocs-ref: dir:.
+    gocd.org/pipelines: backstage,backstage-pr,backstage-builder
   tags:
     - nextjs
     - react
@@ -14,3 +16,5 @@ spec:
   type: website
   lifecycle: experimental
   owner: "group:default/executive"
+  system: users-system
+  dependsOn: ['api:users-srv-api', 'api:auth-srv-api']
