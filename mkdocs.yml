@@ -1,0 +1,8 @@
+site_name: "users-portal"
+site_description: "A website for managing users."
+
+nav:
+  - Introduction: index.md
+
+plugins:
+  - techdocs-core
