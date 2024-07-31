@@ -8,6 +8,7 @@ metadata:
     github.com/project-slug: Staffing-HQ/users-portal
     backstage.io/techdocs-ref: dir:.
     gocd.org/pipelines: backstage,backstage-pr,backstage-builder
+    sonarqube.org/project-key: Staffing-HQ_users-portal
   tags:
     - nextjs
     - react
